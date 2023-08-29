@@ -12,12 +12,13 @@
 
   &__container {
     position: relative;
+    z-index: 1;
     display: flex;
   }
 
   &__info {
     position: relative;
-    z-index: 1000;
+    z-index: 100;
   }
 
   &__img {

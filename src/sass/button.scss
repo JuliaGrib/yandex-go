@@ -6,7 +6,16 @@
   box-shadow: 0px 4px 98px rgba(255, 222, 64, 0.59);
   font-family: 'medium';
   font-size: 24px;
+  transition: 0.5s;
   cursor: pointer;
+
+  &:hover {
+    background-color: #fff540;
+
+    @media screen and (max-width: 768px) {
+      background-color: #ffde40;
+    }
+  }
 
   @media screen and (max-width: 900px) {
     font-size: 18px;
@@ -15,13 +24,14 @@
   &_banner {
     @media screen and (max-width: 635px) {
       position: fixed;
+      z-index: 10000;
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%);
       width: 311px;
       display: block;
-      display: none;
       margin: 0 auto;
+      background-color: #ffde40;
     }
 
     @media screen and (max-width: 360px) {
@@ -53,6 +63,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    box-shadow: none;
   }
 
   &_disabled {
