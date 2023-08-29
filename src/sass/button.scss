@@ -9,16 +9,6 @@
   transition: 0.5s;
   cursor: pointer;
 
-  &:hover {
-    background-color: #fff540;
-  }
-
-  @media screen and (max-width: 768px) {
-    &:hover {
-      background-color: #ffde40;
-    }
-  }
-
   @media screen and (max-width: 900px) {
     font-size: 18px;
   }
