@@ -1,0 +1,84 @@
+.button {
+  padding: 19px 48px;
+  border: none;
+  border-radius: 36px;
+  background-color: #ffde40;
+  box-shadow: 0px 4px 98px rgba(255, 222, 64, 0.59);
+  font-family: 'medium';
+  font-size: 24px;
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    font-size: 18px;
+  }
+
+  &_banner {
+    @media screen and (max-width: 635px) {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 311px;
+      display: block;
+      display: none;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 266px;
+    }
+  }
+
+  &_about {
+    width: 282px;
+    margin-top: 39px;
+    padding: 19px 48px;
+
+    @media screen and (max-width: 420px) {
+      width: 311px;
+      margin-top: 25px;
+      padding: 15px 48px;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 100%;
+    }
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  &_disabled {
+    background-color: #ffef9f;
+
+    svg {
+      fill: #908f8f;
+    }
+  }
+
+  &_active {
+    background-color: #ffde40;
+
+    svg {
+      fill: black;
+    }
+  }
+}
+
+.buttons {
+  display: none;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0 0 0;
+
+  @media screen and (max-width: 475px) {
+    display: flex;
+  }
+}

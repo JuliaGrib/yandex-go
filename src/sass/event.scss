@@ -1,0 +1,32 @@
+.event {
+  @media screen and (max-width: 475px) {
+    overflow: hidden;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__line {
+    position: absolute;
+    top: -231px;
+    right: -156px;
+    z-index: 2000;
+
+    @media screen and (max-width: 1280px) {
+      top: -178px;
+      right: 52px;
+    }
+    @media screen and (max-width: 730px) {
+      top: -94px;
+      right: 0px;
+    }
+    @media screen and (max-width: 635px) {
+      top: 0;
+    }
+    @media screen and (max-width: 425px) {
+      top: -8px;
+      right: -31px;
+    }
+  }
+}

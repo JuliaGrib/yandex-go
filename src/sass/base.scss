@@ -1,0 +1,19 @@
+.container {
+  max-width: 916px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1180px) {
+    padding: 0 9vw;
+  }
+  @media screen and (max-width: 475px) {
+    padding: 0 32px;
+  }
+}
+
+// body {
+//   overflow-x: hidden;
+// }
+
+.link {
+  color: #c5c5c5;
+}
